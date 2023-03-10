@@ -4,7 +4,12 @@ Back up files with **suffixed with date** especially encrypted containers(such a
 # Note
 This is not a script to incrementally back up files, but all the files are suffixed with date, so they reside as several in backup storages. For example:
  ```
- externalStorage $: ls
+ externalStorageOne $: ls
+ luksContainerOne.230110
+ luksContainerOne.230210
+ luksContainerOne.230310
+ 
+ externalStorageTwo $: ls
  luksContainerOne.230110
  luksContainerOne.230210
  luksContainerOne.230310
