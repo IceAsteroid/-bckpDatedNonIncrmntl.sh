@@ -32,4 +32,6 @@ If you encounter any problems, just post an issue, and I'll fix them if I can.
 # Disclaimer
 Despite that this script is programmed in a conservative manner, and I've used this script to back up mainly for encrypted containers so many years, things are still gonna be broke but with small chance. So, you should play with it in your own environment a bit before backing up important stuff.
 
+Since, the script relies blkid command and UUIDs of backup storages to locate specified storages as backup storages in conf. If any of these is broke, things are broke, make sure UUIDs of blocks including these storages are different.
+
 Use at your own risk:( But I hope you're actually enjoying it.
