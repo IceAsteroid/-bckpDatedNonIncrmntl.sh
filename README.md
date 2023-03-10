@@ -7,7 +7,7 @@ This is not a script to incrementally back up files, but all the files are suffi
 However, you can specify how many backups of a file to keep by modifying the integer of the variable for it.
 
 For example:
-Encrypted containers will be backed up in a particular dir.
+Encrypted containers will be backed up in a particular directory.
  ```
  externalStorageOne/EncryptedBlockBackupDir $: ls
  luksContainerOne.230110
