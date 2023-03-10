@@ -19,7 +19,7 @@ This is not a script to incrementally back up files, but all the files are suffi
 # Features
 - Specify blocks(mountable storages) in /dev to be the ones for files to back up to(based on UUIDs of the drives.
 - Auto mount all of blocks in conf that are attached to the computer.
-- Auto back up given files as arguments for the script, to all of mounted storages' specific directories(Can be configured in the script).
+- Auto back up given files passed as arguments for the script, to all of mounted storages' specific directories(Can be configured in the script).
 Auto mount multiple particular attached drives configured in conf, auto back up specified files to all of configured mounted storages.
 - Auto delete oldest backups of a file, if any. Numbers of backups to keep can be modified with a varaible in the script.
 - Additional bonus, you can use bckpDvcMng.sh which this script is based on, to mount all the specified blocks at once.
