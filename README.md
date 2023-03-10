@@ -1,5 +1,5 @@
 # bckpDatedNonIncrmntl.sh
-Back up files especially encrypted containers(such as of LUKS) to mountable storages.
+Back up files with **suffixed with date** especially encrypted containers(such as of LUKS) to mountable storages.
 
 # Features
 - Specify blocks(mountable storages) in /dev to be the ones for files to back up to(based on UUIDs of the drives.
