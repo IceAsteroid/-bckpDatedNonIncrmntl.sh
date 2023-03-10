@@ -24,6 +24,8 @@ Auto mount multiple particular attached drives configured in conf, auto back up 
 - Auto delete oldest backups of a file, if any. Numbers of backups to keep can be modified with a varaible in the script.
 - Additional bonus, you can use bckpDvcMng.sh which this script is based on, to mount all the specified blocks at once.
 
+# How to use
+
 # Contribution
 If you encounter any problems, just post an issue, and I'll fix them if I can.
 
