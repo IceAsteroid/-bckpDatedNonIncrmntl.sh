@@ -2,9 +2,12 @@
 Back up files/dirs especially encrypted containers(such as of LUKS) **suffixed with date** to mountable storages.
 
 # Note
-This is not a script to incrementally back up files, but all the files are suffixed with date, so they reside as several in backup storages for extra safety instead of only one backup of a file. For example:
+This is not a script to incrementally back up files, but all the files are suffixed with date, so they reside as several in backup storages for extra safety instead of only one backup of a file.
 
-Encrypted containers will be backed up in a particular dir, for example:
+However, you can specify how many backups of a file to keep by modifying the integer of the variable for it.
+
+For example:
+Encrypted containers will be backed up in a particular dir.
  ```
  externalStorageOne/EncryptedBlockBackupDir $: ls
  luksContainerOne.230110
@@ -16,7 +19,7 @@ Encrypted containers will be backed up in a particular dir, for example:
  luksContainerOne.230210
  luksContainerOne.230310
  ```
- Directories will be backed up to directoires named as their names suffixed with date, for example:
+ Directories will be backed up to directoires named as their names suffixed with date.
  ```
  externalStorageOne/DirOne_DatedBackup $: ls
  DirOne.230110
@@ -28,11 +31,9 @@ Encrypted containers will be backed up in a particular dir, for example:
  DirOne.230210
  DirOne.230310
  ```
- For non-encrypted files:
+ For non-encrypted files.
  ```
  ```
- 
- However, you can specify how many backups of a file to keep by modifying the integer of the variable for it.
 
 # Features
 - Specify blocks(mountable storages) in /dev to be the ones for files to back up to(based on UUIDs of the drives.
