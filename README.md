@@ -1,19 +1,37 @@
 # bckpDatedNonIncrmntl.sh
-Back up files **suffixed with date** especially encrypted containers(such as of LUKS) to mountable storages.
+Back up files/dirs **suffixed with date** especially encrypted containers(such as of LUKS) to mountable storages.
 
 # Note
 This is not a script to incrementally back up files, but all the files are suffixed with date, so they reside as several in backup storages for extra safety instead of only one backup of a file. For example:
+
+Encrypted containers will be backed up in a particular dir, for example:
  ```
- externalStorageOne $: ls
+ externalStorageOne/EncryptedBlockBackupDir $: ls
  luksContainerOne.230110
  luksContainerOne.230210
  luksContainerOne.230310
  
- externalStorageTwo $: ls
+ externalStorageTwo/EncryptedBlockBackupDir $: ls
  luksContainerOne.230110
  luksContainerOne.230210
  luksContainerOne.230310
  ```
+ Directories will be backed up to directoires named as their names suffixed with date, for example:
+ ```
+ externalStorageOne/DirOne_DatedBackup $: ls
+ DirOne.230110
+ DirOne.230210
+ DirOne.230310
+ 
+ externalStorageTwo/DirOne_DatedBackup $: ls
+ DirOne.230110
+ DirOne.230210
+ DirOne.230310
+ ```
+ For non-encrypted files:
+ ```
+ ```
+ 
  However, you can specify how many backups of a file to keep by modifying the integer of the variable for it.
 
 # Features
