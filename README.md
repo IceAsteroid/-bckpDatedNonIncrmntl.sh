@@ -19,7 +19,7 @@ Encrypted containers will be backed up in a particular directory.
  luksContainerOne.230210
  luksContainerOne.230310
  ```
- Directories will be backed up to directoires named as their names suffixed with date.
+ Directories will be backed up to directoires named as their names are suffixed with date.
  ```
  externalStorageOne/DirOne_DatedBackup $: ls
  DirOne.230110
