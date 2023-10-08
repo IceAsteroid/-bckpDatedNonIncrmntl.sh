@@ -51,6 +51,6 @@ If you encounter any problems, just post an issue, and I'll fix them if I can.
 # Disclaimer
 Despite that this script is programmed in a conservative manner, which means all the important values are stateless & retrieved in real-time when a certain feature is called, and I've used this script to back up mainly for encrypted containers so many years, things would still have a small chance to be broken. So, you should play with it in your own environment a bit before backing up important stuff.
 
-Since, the script relies on blkid command and UUIDs of backup storages to locate specified storages as backup storages in conf. If any of these is broke, things are broken, make sure the UUIDs of blocks including these storages are different.
+Since, the script relies on blkid command and UUIDs of backup storages to locate specified storages as backup storages in conf. If any of these is broken, things are broken, make sure the UUIDs of blocks including these storages are different.
 
 Use at your own risk:( But I hope you actually end up enjoying it:)
