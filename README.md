@@ -36,7 +36,7 @@ Encrypted containers will be backed up in a particular directory.
  ```
 
 # Features
-- Specify blocks(mountable storages) by names which are in "/dev/" to be the ones for files to back up to(based on UUIDs of the drives.
+### Specify blocks(mountable storages) by names which are in "/dev/" to be the ones for files to back up to(based on UUIDs of the drives.
 
 For example:
 ```
@@ -82,7 +82,16 @@ sda                7:6    0    64G  0    loop
 - Auto mount all the blocks in conf that are attached to the computer.
 For example:
 ```
-... # Omitted lines, same as above.
+## Backup Device Management ##
+# Asking root privilege for blkid command..
+# List of attached backup IDs & their blocks:
+ 1.ID: xxx-xxx-xxx-xxx, BLK: /dev/sda
+ 2.ID: xxx-xxx-xxx-xxx, BLK: /dev/sdb
+# List of mounted backup IDs' block & mount point:
+# On bckup dir:
+  (null)
+# On other dirs:
+  (null)
 # Options:
 1) Print all devices' IDs in backp device conf
 2) Remove attached backup devices from conf
@@ -111,12 +120,11 @@ For example:
 #(PROMPT)Select:
 ```
 
+## Other features
 - Auto back up given files passed as arguments for the script, to all of mounted storages' specific directories(Can be configured in the script).
-Auto mount multiple particular attached drives configured in conf, auto back up specified files to all of configured mounted storages.
+- Auto mount multiple particular attached drives configured in conf, auto back up specified files to all of configured mounted storages.
 - Auto delete oldest backups of a file, if any. Numbers of backups to keep can be modified with a varaible in the script.
 - Additional bonus, you can use bckpDvcMng.sh which this script is based on, to mount all the specified blocks at once.
-
-# How to use
 
 # Contribution
 If you encounter any problems, just post an issue, and I'll fix them if I can.
