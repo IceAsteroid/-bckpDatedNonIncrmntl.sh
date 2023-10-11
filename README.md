@@ -36,7 +36,7 @@ Encrypted containers will be backed up in a particular directory.
  ```
 
 # Features
-### Specify blocks(mountable storages) by names which are in "/dev/" to be the ones for files to back up to(based on UUIDs of the drives.
+Specify blocks(mountable storages) by names which are in "/dev/" to be the ones for files to back up to(based on UUIDs of the drives.
 
 For example:
 ```
@@ -79,7 +79,8 @@ sda                7:6    0    64G  0    loop
 5) Exit or Start backup if in a backup script
 #(PROMPT)Select: 
 ```
-- Auto mount all the blocks in conf that are attached to the computer.
+
+Auto mount all the blocks in conf that are attached to the computer.
 For example:
 ```
 ## Backup Device Management ##
