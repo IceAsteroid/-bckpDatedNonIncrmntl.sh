@@ -44,7 +44,7 @@ For example:
 # Asking root privilege for blkid command..
 doas (apple@earth) password: 
 # List of attached backup IDs & their blocks:
-  (null)
+   1.ID: xxx-xxx-xxx-xxx, BLK: /dev/sda
 # List of mounted backup IDs' block & mount point:
 # On bckup dir:
   (null)
@@ -60,12 +60,14 @@ doas (apple@earth) password:
 
 # Device table:
 NAME MAJ:MIN RM   SIZE RO TYPE  MOUNTPOINTS
-sda                7:6    0    64G  0    loop  
+sda                x:x    0     32G  0   xxx
+sdb                7:6    0    64G  0    xxx  
 
-#(PROMPT)Add devices: sda
+#(PROMPT)Add devices: sdb
 
 # List of attached backup IDs & their blocks:
  1.ID: xxx-xxx-xxx-xxx, BLK: /dev/sda 
+ 2.ID: xxx-xxx-xxx-xxx, BLK: /dev/sdb 
 # List of mounted backup IDs' block & mount point:
 # On bckup dir:
   (null)
@@ -124,8 +126,12 @@ For example:
 ## Other features
 - Auto back up given files passed as arguments for the script, to all of mounted storages' specific directories(Can be configured in the script).
 - Auto mount multiple particular attached drives configured in conf, auto back up specified files to all of configured mounted storages.
-- Auto delete oldest backups of a file, if any. Numbers of backups to keep can be modified with a varaible in the script.
+- Auto delete oldest backups of a file if any. Numbers of backups to keep can be modified with a varaible in the script.
 - Additional bonus, you can use bckpDvcMng.sh which this script is based on, to mount all the specified blocks at once.
+
+The backup process will look like this:
+```
+```
 
 # Contribution
 If you encounter any problems, just post an issue, and I'll fix them if I can.
